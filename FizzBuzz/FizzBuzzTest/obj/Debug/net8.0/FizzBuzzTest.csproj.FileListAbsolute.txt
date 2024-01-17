@@ -100,3 +100,4 @@ C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzTest\obj\Debug\net8.0\refint\FizzB
 C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzTest\obj\Debug\net8.0\FizzBuzzTest.pdb
 C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzTest\obj\Debug\net8.0\FizzBuzzTest.genruntimeconfig.cache
 C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzTest\obj\Debug\net8.0\ref\FizzBuzzTest.dll
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzTest\obj\Debug\net8.0\FizzBuzzTest.sourcelink.json

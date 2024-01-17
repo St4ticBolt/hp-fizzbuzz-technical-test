@@ -17,7 +17,6 @@ namespace FizzBuzzCore
                 return Constants.BUZZ;
 
             return number.ToString();
-
         }
     }
 
