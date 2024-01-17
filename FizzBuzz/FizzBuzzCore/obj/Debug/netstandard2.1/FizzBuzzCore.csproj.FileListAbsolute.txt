@@ -1,0 +1,9 @@
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\bin\Debug\netstandard2.1\FizzBuzzCore.deps.json
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\bin\Debug\netstandard2.1\FizzBuzzCore.dll
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\bin\Debug\netstandard2.1\FizzBuzzCore.pdb
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\obj\Debug\netstandard2.1\FizzBuzzCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\obj\Debug\netstandard2.1\FizzBuzzCore.AssemblyInfoInputs.cache
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\obj\Debug\netstandard2.1\FizzBuzzCore.AssemblyInfo.cs
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\obj\Debug\netstandard2.1\FizzBuzzCore.csproj.CoreCompileInputs.cache
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\obj\Debug\netstandard2.1\FizzBuzzCore.dll
+C:\Development\dev-fizz-buzz\FizzBuzz\FizzBuzzCore\obj\Debug\netstandard2.1\FizzBuzzCore.pdb
