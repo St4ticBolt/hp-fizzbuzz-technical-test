@@ -1,8 +1,9 @@
-﻿using System;
+﻿using FizzBuzzCore.Interfaces;
+using System;
 
 namespace FizzBuzzCore
 {
-    public class FizzBuzzCalculator
+    public class FizzBuzzCalculator: IFizzBuzzCalculator
     {
         public string EvaluateNumber(int number)
         {

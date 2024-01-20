@@ -1,4 +1,6 @@
 using FizzBuzzCore;
+using FizzBuzzCore.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.CompilerServices;
 
 namespace FizzBuzzTest
@@ -10,12 +12,16 @@ namespace FizzBuzzTest
         private int _displayFizzBuzz = 30;
         private int _displayNumber = 7;
 
-        private FizzBuzzCalculator fizzBuzzCalculation;
+        private IFizzBuzzCalculator fizzBuzzEvaluator;
 
         [SetUp]
         public void Setup()
         {
-            fizzBuzzCalculation = new FizzBuzzCalculator();
+            var services = new ServiceCollection()
+                .AddTransient<IFizzBuzzCalculator, FizzBuzzCalculator>()
+                .BuildServiceProvider();
+
+            fizzBuzzEvaluator = services.GetService<IFizzBuzzCalculator>();
         }
 
         /// <summary>
@@ -24,7 +30,7 @@ namespace FizzBuzzTest
         [Test]
         public void CorrectlyReturnsFizz()
         {
-            var fizz = fizzBuzzCalculation.EvaluateNumber(_displayFizz);
+            var fizz = fizzBuzzEvaluator.EvaluateNumber(_displayFizz);
             Assert.AreEqual(Constants.FIZZ, fizz);
         }
         /// <summary>
@@ -34,7 +40,7 @@ namespace FizzBuzzTest
         [Test]
         public void CorrectlyReturnsBuzz()
         {
-            var buzz = fizzBuzzCalculation.EvaluateNumber(_displayBuzz);
+            var buzz = fizzBuzzEvaluator.EvaluateNumber(_displayBuzz);
             Assert.AreEqual(Constants.BUZZ, buzz);
         }
         /// <summary>
@@ -43,7 +49,7 @@ namespace FizzBuzzTest
         [Test]
         public void CorrectlyReturnsFizzBuzz()
         {
-            var fizzBuzz = fizzBuzzCalculation.EvaluateNumber(_displayFizzBuzz);
+            var fizzBuzz = fizzBuzzEvaluator.EvaluateNumber(_displayFizzBuzz);
             Assert.AreEqual(Constants.FIZZ_BUZZ, fizzBuzz);
         }
 
@@ -53,7 +59,7 @@ namespace FizzBuzzTest
         [Test]
         public void CorrectlyReturnsNumber()
         {
-            var number = fizzBuzzCalculation.EvaluateNumber(_displayNumber);
+            var number = fizzBuzzEvaluator.EvaluateNumber(_displayNumber);
             Assert.AreEqual(_displayNumber.ToString(), number);
         }
 
